@@ -1,0 +1,104 @@
+guid: 47c068e2-b810-426d-ad3e-0585b78f0209
+liveboard:
+  name: cx-be-oct25130939-auto-liveboard-version-control_update
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total double sales by Productname
+      tables:
+      - id: cx-be-oct25130939-auto-worksheet-version-control
+        name: cx-be-oct25130939-auto-worksheet-version-control
+        fqn: 71a0b6d3-0a2f-40ce-bc71-b399ac5a77dc
+      formulas:
+      - id: formula_double sales
+        name: double sales
+        expr: "[Sales] * [int]"
+        was_auto_generated: false
+      search_query: "[Productname] [formula_double sales]"
+      answer_columns:
+      - name: Productname
+      - name: Total double sales
+      table:
+        table_columns:
+        - column_id: Productname
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total double sales
+          headline_aggregation: TABLE_AGGR
+        ordered_column_ids:
+        - Productname
+        - Total double sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Productname\",\"columnProperty\": {}},{\"columnId\": \"Total double sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Productname
+        - column_id: Total double sales
+        axis_configs:
+        - x:
+          - Productname
+          "y":
+          - Total double sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Productname\",\"columnProperty\": {}},{\"columnId\": \"Total double sales\",\"columnProperty\": {}},{\"columnId\": \"470537f7-c2cb-4fe4-bc4d-b8b85683baba\",\"columnProperty\": {}},{\"columnId\": \"63467c7a-1a80-4a72-aee7-7aaae8aaa1e7\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a4395f15-3ee4-4fe0-80cf-18413a84ce6d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total double sales\"],\"isOpposite\": false}},{\"id\": \"ab78af56-3a89-4fa8-8c28-85e87c77e39d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Productname\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total double sales\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 3f01d345-ec74-4ba8-a764-284694efb960
+  - id: Viz_2
+    answer:
+      name: Total decimal sales by Producttype
+      tables:
+      - id: cx-be-oct25130939-auto-worksheet-version-control
+        name: cx-be-oct25130939-auto-worksheet-version-control
+        fqn: 71a0b6d3-0a2f-40ce-bc71-b399ac5a77dc
+      formulas:
+      - id: formula_decimal sales
+        name: decimal sales
+        expr: "[Sales] * [decimal]"
+        was_auto_generated: false
+      search_query: "[Producttype] [formula_decimal sales]"
+      answer_columns:
+      - name: Producttype
+      - name: Total decimal sales
+      table:
+        table_columns:
+        - column_id: Producttype
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total decimal sales
+          headline_aggregation: TABLE_AGGR
+        ordered_column_ids:
+        - Producttype
+        - Total decimal sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Producttype\",\"columnProperty\": {}},{\"columnId\": \"Total decimal sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Producttype
+        - column_id: Total decimal sales
+        axis_configs:
+        - x:
+          - Producttype
+          "y":
+          - Total decimal sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Producttype\",\"columnProperty\": {}},{\"columnId\": \"Total decimal sales\",\"columnProperty\": {}},{\"columnId\": \"c971b6b0-e3cc-4924-b75d-85e9e38956fa\",\"columnProperty\": {}},{\"columnId\": \"7dcb5664-3681-4c65-84fd-7852118fd342\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ef8c560c-9642-4cc5-ab4d-6a9b7d5155ed\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total decimal sales\"],\"isOpposite\": false}},{\"id\": \"cdd74033-40f3-42aa-bd0d-827cb7e5400f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Producttype\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total decimal sales\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 8234ec62-1550-4956-98f4-2770fcbca09a
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: MEDIUM
+    - visualization_id: Viz_2
+      size: MEDIUM
+  parameter_overrides:
+  - key: ef6b623c-5ad5-4546-b485-840f798a1e28
+    value:
+      name: cx-be-oct25130939-auto-worksheet-version-control::int
+  - key: f08abc09-222e-440d-b0bd-60c1468c5d69
+    value:
+      name: cx-be-oct25130939-auto-worksheet-version-control::decimal
+  ordered_chips:
+  - name: cx-be-oct25130939-auto-worksheet-version-control::int
+    type: PARAMETER
+  - name: cx-be-oct25130939-auto-worksheet-version-control::decimal
+    type: PARAMETER
